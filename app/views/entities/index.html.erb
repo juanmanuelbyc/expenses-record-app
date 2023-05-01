@@ -1,0 +1,50 @@
+<section>
+  <div class="nav">
+    <div>
+      <div>
+        <%= link_to "Back", authenticated_root_path %>
+      </div>
+
+      <div class="ms-3">
+        <h3 class="text-white">Transactions for <%= @group.name %></h3>
+      </div>
+
+      <div>
+        <% if user_signed_in? %>
+          <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="ms-2 mt-1">
+      <% if @group.image.attached? %>
+        <img src="<%=(url_for(@group.image)) %>", alt="group-image", style="width:60px; height:60px;">
+      <% end %>
+    </div>
+
+    <div>
+      <h6>Total Amount: $ <%= @group.entities.sum(:amount) %></h6>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center align-items-center border border-success ms-5 me-5">
+    <%= link_to 'Add a New Transaction', new_group_entity_path(params[:group_id]), class: "text-success" %>
+  </div>
+  
+  <table>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Item</th>
+      <th scope="col">Amount</th>
+    </tr>
+    <% @entities.order(created_at: :desc).each do |entity| %>
+      <%= render "entity_row", entity: entity %>
+    <% end %>
+  </table>
+
+  <div class="d-flex justify-content-center align-items-center border border-success ms-5 me-5">
+    <%= link_to 'Add a New Transaction', new_group_entity_path(params[:group_id]), class: "text-success" %>
+  </div>
+</section>

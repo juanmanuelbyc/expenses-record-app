@@ -1,0 +1,15 @@
+<li class="">
+    <div class="vert">
+        <% if group.image.attached? %>
+            <img src="<%=(url_for(group.image)) %>", alt="group-image", style="width:60px; height:60px;">
+        <% end %>
+        </div>
+        <div class="vert">
+            <div class="vert">
+                <div><%= link_to group.name, group_entities_path(group) %></div>
+            </div>
+        <div class="">
+            <div>$ <%= group.entities.sum(:amount) %></div>
+        </div>
+    </div>
+</li>

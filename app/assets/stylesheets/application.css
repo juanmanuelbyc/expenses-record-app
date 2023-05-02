@@ -1,6 +1,24 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+@import url(//db.onlinewebfonts.com/c/74664495dd5c6bda81a3919d75ed353f?family=Fertigo);
+
 * {
-    display: flex;
     box-sizing: border-box;
+    font-family: 'Proxima Nova', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    color: #434b54;
+}
+
+.flex {
+    display: flex;
+}
+
+.full-scrn {
+    height: 100vh;
+    max-width: 100%;
 }
 
 script, style, title {
@@ -11,6 +29,12 @@ html, head, body, section, form, tbody, .vert {
     flex-direction: column;
 }
 
+.cntrd {
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
 .spc-arnd {
     justify-content: space-around;
 }
@@ -19,10 +43,13 @@ html, head, body, section, form, tbody, .vert {
     justify-content: space-between;
 }
 
-
 table {
     display: table;
     width: 100%;
+  }
+
+  li {
+    list-style: none;
   }
   
   th, td {
@@ -30,3 +57,103 @@ table {
     border: 1px solid gray;
     flex: 1;
   }
+
+  .c1 {
+    color: royalblue;
+  }
+
+  .bkg1 {
+    background-color: rgb(242, 241, 241);
+  }
+
+  .gap {
+    gap: 5px;
+  }
+
+  .btn {
+    padding: 5px;
+  }
+  
+  .btn1 {
+    width: 90vw;
+    -webkit-text-fill-color: white;
+    background-color: #3778c2;
+    border-style: none;
+    height: 6vh;
+    border-radius: 4px;
+  }
+
+  .btn2 {
+    width: 90vw;
+    -webkit-text-fill-color: darkgray;
+    border-style: none;
+    height: 6vh;
+    border-radius: 10%;
+  }
+
+  .navbar {
+    display: flex;
+    background-color: #3778c2;
+    width: 100vw;
+    padding: 3% 5%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text-white {
+    color: whitesmoke;
+    font-weight: lighter;
+    align-self:center;
+  }
+
+  .btn3 {
+    -webkit-text-fill-color: whitesmoke;
+    border-style: none;
+    font-weight: lighter;
+  }
+
+  .back-arrow {
+    -webkit-text-fill-color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .field1 {
+    background-color: white;
+    border-style: none;
+    height: 6vh;
+    padding: 3%;
+    width: 100vw;
+  }
+
+  .text1 {
+    color: darkgray;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    margin: 10px 0;
+  }
+
+  .btn4 {
+    width: 90vw;
+    -webkit-text-fill-color: white;
+    background-color: #5fb523;
+    border-style: solid;
+    border-color: whitesmoke;
+    height: 6vh;
+    border-radius: 4px;
+  }
+  
+  .green {
+    background-color: #5fb523;
+    height: 8vh;
+  }
+
+  .group-card {
+    background-color: white;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+  }
+  

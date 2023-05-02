@@ -1,23 +1,21 @@
-<section>
-  <div class="nav">
+<section class="bkg3 full-scrn flex vert cntrd spc-btwn" style="padding: 30% 0">
+  <div class="flex vert cntrd">
     <div>
-      <div>
-        <%= link_to "Back", authenticated_root_path %>
-      </div>
+      <%= link_to "Back", authenticated_root_path %>
+    </div>
 
-      <div class="ms-3">
-        <h3 class="text-white">Transactions for <%= @group.name %></h3>
-      </div>
-
-      <div>
-        <% if user_signed_in? %>
-          <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
-        <% end %>
-      </div>
+    <div>
+      <% if user_signed_in? %>
+        <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn btn-primary" %>
+      <% end %>
     </div>
   </div>
+  
+  <div class="ms-3">
+    <h3 class="text-white">TRANSACTIONS FOR <%= @group.name.upcase() %></h3>
+  </div>
 
-  <div>
+  <div class="flex vert cntrd">
     <div class="ms-2 mt-1">
       <% if @group.image.attached? %>
         <img src="<%=(url_for(@group.image)) %>", alt="group-image", style="width:60px; height:60px;">
@@ -27,10 +25,10 @@
     <div>
       <h6>Total Amount: $ <%= @group.entities.sum(:amount) %></h6>
     </div>
-  </div>
 
-  <div class="d-flex justify-content-center align-items-center border border-success ms-5 me-5">
-    <%= link_to 'Add a New Transaction', new_group_entity_path(params[:group_id]), class: "text-success" %>
+    <div class="d-flex justify-content-center align-items-center border border-success ms-5 me-5">
+      <%= link_to 'Add a New Transaction', new_group_entity_path(params[:group_id]), class: "text-success" %>
+    </div>
   </div>
   
   <table>

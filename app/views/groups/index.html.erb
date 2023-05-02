@@ -1,31 +1,30 @@
-<section>
-  <div class="vert">
+<section class="bkg1 full-scrn flex vert">
+  <nav class="navbar">
+    <div class="flex vert">
+      <h6 class="text-white">Signed in:</h6>
+      <h6 class="text-white"><%= @user.name %></h6>
+    </div>
+
     <div>
+      <h2 class="text-white">CATEGORIES</h2>
+    </div>
+
+    <div class="actions">
       <% if user_signed_in? %>
-        <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn" %>
+      <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn btn3" %>
       <% end %>
     </div>
+  </nav>
 
-    <div>
-      <h2>Categories</h2>
-    </div>
-  </div>
-
-  <div>
-    <h6>You Signed in as: <%= @user.name %></h6>
-  </div>
-
-  <div class="">
-    <%= link_to 'Add a New Category', new_group_path, class: ""%>
-  </div>
-
-  <div class="vert">
+  <div class="flex vert spc-btwn gap" style="height: 100%;">
+    <div class="flex vert" style="width: 100%; flex-wrap: wrap;">
       <% @groups.each do |group| %>
         <%= render "group_card", group: group %>
       <% end %>
-  </div>
+    </div>
 
-  <div class="">
-    <%= link_to 'Add a New Category', new_group_path, class: ""%>
+    <div class="flex vert cntrd green">
+      <%= button_to 'ADD NEW CATEGORY', new_group_path, class: "btn4"%>
+    </div>
   </div>
 </section>

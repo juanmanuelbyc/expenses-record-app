@@ -1,12 +1,12 @@
 <section class="bkg1 full-scrn flex vert">
   <nav class="navbar">
     <div class="flex vert">
-      <h6 class="text-white">Signed in:</h6>
-      <h6 class="text-white"><%= @user.name %></h6>
+      <h6 class="text-white">Signed in</h6>
+      <h6 class="text-white">as: <%= @user.name %></h6>
     </div>
 
     <div>
-      <h2 class="text-white">CATEGORIES</h2>
+      <h2 class="text-white" style="margin-left: 15%">CATEGORIES</h2>
     </div>
 
     <div class="actions">
@@ -17,14 +17,14 @@
   </nav>
 
   <div class="flex vert spc-btwn gap" style="height: 100%;">
-    <div class="flex vert" style="width: 100%; flex-wrap: wrap;">
+    <div class="flex vert" style="width: 100%; flex-wrap: wrap;yy">
       <% @groups.each do |group| %>
         <%= render "group_card", group: group %>
       <% end %>
     </div>
 
     <div class="flex vert cntrd green">
-      <%= button_to 'ADD NEW CATEGORY', new_group_path, class: "btn4"%>
+      <%= button_to 'ADD NEW CATEGORY', new_group_path, method: :get, class: 'btn4'%>
     </div>
   </div>
 </section>

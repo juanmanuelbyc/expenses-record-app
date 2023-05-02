@@ -54,7 +54,7 @@ table {
   
   th, td {
     display: table-cell;
-    border: 1px solid gray;
+    border: none;
     flex: 1;
   }
 
@@ -98,6 +98,7 @@ table {
     padding: 3% 5%;
     align-items: center;
     justify-content: space-between;
+    height: 10vh;
   }
 
   .text-white {
@@ -147,6 +148,7 @@ table {
   .green {
     background-color: #5fb523;
     height: 8vh;
+    width: 100vw;
   }
 
   .group-card {
@@ -156,4 +158,9 @@ table {
     justify-content: space-between;
     padding: 3px;
   }
-  
+
+  .text2 {
+    color: darkgray;
+    text-decoration: none;
+    margin: 10px 0;
+  }

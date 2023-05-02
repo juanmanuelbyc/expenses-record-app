@@ -1,29 +1,34 @@
-<section class="bkg3 full-scrn flex vert cntrd spc-btwn" style="padding: 30% 0">
-    <div>
-        <%= button_to "Back", authenticated_root_path, method: :get %>
-    </div>
-
-    <div>
-        <h2>Add a New Transaction</h2>
-    </div>
+<section class="bkg1 full-scrn flex vert cntrd spc-btwn">
     <%= form_with model: @entity, url: group_entities_path(params[:group_id]) do |form| %>
-        <div>
-            <%= form.label :name %>
-            <%= form.text_field :name, placeholder:'Name Here!', class:'text-input form-control form-control-lg' %>
-        </div>
+        <nav class="navbar">
+            <div class="">
+                <%= link_to " ⇦ ", authenticated_root_path, :class => 'back-arrow' %>
+            </div>
+
+            <div>
+                <h2 class="text-white">ADD NEW TRANSACTION</h2>
+            </div>
+
+            <div>
+                <%= form.submit "Save", class: "btn btn3" %>
+            </div>
+        </nav>
+    
+        <div class="bkg2 flex vert">
 
         <div>
-            <%= form.label :amount %>
-            <%= form.number_field :amount, placeholder:'Amount Here!', class:'text-input form-control form-control-lg' %>
+            <%= form.text_field :name, placeholder:'Name', class:'field1' %>
         </div>
-
+        <hr>
         <div>
-            <%= form.label :group_id %>
+            <%= form.number_field :amount, placeholder:'Amount', class:'field1' %>
+        </div>
+        <hr>
+        <div class="field1 flex spc-btwn">
+            Select a categorie
             <%= form.select :group_id, options_from_collection_for_select(@groups, :id, :name) %>
         </div>
 
-        <div>
-            <%= form.submit "Save", class: "btn" %>
         </div>
     <% end %>
 <section>

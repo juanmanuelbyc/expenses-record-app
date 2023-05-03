@@ -31,3 +31,5 @@
 /config/master.key
 
 /app/assets/builds
+
+/config/credentials/development.key

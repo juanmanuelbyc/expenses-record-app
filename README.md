@@ -30,6 +30,7 @@
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
+  - [🎥 Explanation video ](#-explanation-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -186,3 +187,12 @@ UI design by Gregoire Vella <a href="https://www.behance.net/gregoirevella"></a>
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- PRESENTATION VIDEO -->
+
+### Explanation
+
+Try watching my project explanation video
+
+[here!](https://www.loom.com/share/7b63513c7f3b486681e906dfcbe9241e)

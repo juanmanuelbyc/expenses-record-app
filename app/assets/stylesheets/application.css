@@ -2,31 +2,39 @@
 @import url("//db.onlinewebfonts.com/c/74664495dd5c6bda81a3919d75ed353f?family=Fertigo");
 
 * {
-    box-sizing: border-box;
-    font-family: 'Proxima Nova', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    color: #434b54;
+  box-sizing: border-box;
+  font-family: 'Proxima Nova', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: #434b54;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .full-scrn {
-    height: 100vh;
-    max-width: 100%;
+  height: 100vh;
+  max-width: 100%;
 }
 
-script, style, title {
-    display: none;
+script,
+style,
+title {
+  display: none;
 }
 
-html, head, body, section, form, tbody, .vert {
-    flex-direction: column;
+html,
+head,
+body,
+section,
+form,
+tbody,
+.vert {
+  flex-direction: column;
 }
 
 .cntrd {
@@ -36,131 +44,132 @@ html, head, body, section, form, tbody, .vert {
 }
 
 .spc-arnd {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .spc-btwn {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 table {
-    display: table;
-    width: 100%;
-  }
+  display: table;
+  width: 100%;
+}
 
-  li {
-    list-style: none;
-  }
-  
-  th, td {
-    display: table-cell;
-    border: none;
-    flex: 1;
-  }
+li {
+  list-style: none;
+}
 
-  .c1 {
-    color: royalblue;
-  }
+th,
+td {
+  display: table-cell;
+  border: none;
+  flex: 1;
+}
 
-  .bkg1 {
-    background-color: rgb(242 241 241);
-  }
+.c1 {
+  color: royalblue;
+}
 
-  .gap {
-    gap: 5px;
-  }
+.bkg1 {
+  background-color: rgb(242 241 241);
+}
 
-  .btn {
-    padding: 5px;
-  }
-  
-  .btn1 {
-    width: 90vw;
-    -webkit-text-fill-color: white;
-    background-color: #3778c2;
-    border-style: none;
-    height: 6vh;
-    border-radius: 4px;
-  }
+.gap {
+  gap: 5px;
+}
 
-  .btn2 {
-    width: 90vw;
-    -webkit-text-fill-color: darkgray;
-    border-style: none;
-    height: 6vh;
-    border-radius: 10%;
-  }
+.btn {
+  padding: 5px;
+}
 
-  .navbar {
-    display: flex;
-    background-color: #3778c2;
-    width: 100vw;
-    padding: 3% 5%;
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
-  }
+.btn1 {
+  width: 90vw;
+  -webkit-text-fill-color: white;
+  background-color: #3778c2;
+  border-style: none;
+  height: 6vh;
+  border-radius: 4px;
+}
 
-  .text-white {
-    color: whitesmoke;
-    font-weight: lighter;
-    align-self:center;
-  }
+.btn2 {
+  width: 90vw;
+  -webkit-text-fill-color: darkgray;
+  border-style: none;
+  height: 6vh;
+  border-radius: 10%;
+}
 
-  .btn3 {
-    -webkit-text-fill-color: whitesmoke;
-    border-style: none;
-    font-weight: lighter;
-  }
+.navbar {
+  display: flex;
+  background-color: #3778c2;
+  width: 100vw;
+  padding: 3% 5%;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
 
-  .back-arrow {
-    -webkit-text-fill-color: whitesmoke;
-    text-decoration: none;
-  }
+.text-white {
+  color: whitesmoke;
+  font-weight: lighter;
+  align-self: center;
+}
 
-  .field1 {
-    background-color: white;
-    border-style: none;
-    height: 6vh;
-    padding: 3%;
-    width: 100vw;
-  }
+.btn3 {
+  -webkit-text-fill-color: whitesmoke;
+  border-style: none;
+  font-weight: lighter;
+}
 
-  .text1 {
-    color: darkgray;
-    text-decoration: none;
-    text-align: center;
-    align-self: center;
-    align-content: center;
-    margin: 10px 0;
-  }
+.back-arrow {
+  -webkit-text-fill-color: whitesmoke;
+  text-decoration: none;
+}
 
-  .btn4 {
-    width: 90vw;
-    -webkit-text-fill-color: white;
-    background-color: #5fb523;
-    border-style: solid;
-    border-color: whitesmoke;
-    height: 6vh;
-    border-radius: 4px;
-  }
-  
-  .green {
-    background-color: #5fb523;
-    height: 8vh;
-    width: 100vw;
-  }
+.field1 {
+  background-color: white;
+  border-style: none;
+  height: 6vh;
+  padding: 3%;
+  width: 100vw;
+}
 
-  .group-card {
-    background-color: white;
-    width: 90vw;
-    display: flex;
-    justify-content: space-between;
-    padding: 3px;
-  }
+.text1 {
+  color: darkgray;
+  text-decoration: none;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  margin: 10px 0;
+}
 
-  .text2 {
-    color: darkgray;
-    text-decoration: none;
-    margin: 10px 0;
-  }
+.btn4 {
+  width: 90vw;
+  -webkit-text-fill-color: white;
+  background-color: #5fb523;
+  border-style: solid;
+  border-color: whitesmoke;
+  height: 6vh;
+  border-radius: 4px;
+}
+
+.green {
+  background-color: #5fb523;
+  height: 8vh;
+  width: 100vw;
+}
+
+.group-card {
+  background-color: white;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.text2 {
+  color: darkgray;
+  text-decoration: none;
+  margin: 10px 0;
+}

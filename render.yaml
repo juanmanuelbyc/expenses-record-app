@@ -1,10 +1,12 @@
 databases:
   - name: postgres
     ipAllowList: []
+    plan: free
 
 services:
   - type: web
-    name: ROR-Capstone
+    plan: free
+    name: expenses-record
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec rails s

@@ -6,5 +6,10 @@
   },
   "dependencies": {
     "esbuild": "^0.17.18"
+  },
+  "devDependencies": {
+    "postcss-lit": "^1.1.0",
+    "stylelint": "^15.6.1",
+    "stylelint-config-standard": "^33.0.0"
   }
 }

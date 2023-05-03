@@ -76,3 +76,5 @@ end
 
 # Authentication
 gem 'devise'
+
+gem "esbuild-rails", "~> 0.1.4"

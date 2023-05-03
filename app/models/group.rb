@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-
+# top-level documentation comment
 class Group < ApplicationRecord
   has_one_attached :image
 

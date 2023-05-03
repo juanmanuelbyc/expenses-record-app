@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-
+# top-level documentation comment
 class UsersController < ApplicationController
   before_action :authenticate_user!, except: [:splash]
   def splash

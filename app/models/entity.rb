@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-
+# top-level documentation comment
 class Entity < ApplicationRecord
   belongs_to :user
   belongs_to :group

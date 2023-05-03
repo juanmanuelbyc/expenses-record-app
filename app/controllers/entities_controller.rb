@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-
+# top-level documentation comment
 class EntitiesController < ApplicationController
   before_action :set_user
 
@@ -8,6 +7,7 @@ class EntitiesController < ApplicationController
     @group = @groups.find(params[:group_id])
     @entities = @group.entities
   end
+
   def new
     @groups = @user.groups
     @group = @groups.find(params[:group_id])

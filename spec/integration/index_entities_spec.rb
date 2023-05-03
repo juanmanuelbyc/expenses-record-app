@@ -24,7 +24,7 @@ RSpec.describe 'expenses/index.html.erb', type: :feature do
 
     @entities = @group.entities.order(created_at: :desc)
     @entities.each do |entity|
-      expect(page).to have_content("#{entity.name}")
+      expect(page).to have_content(entity.name.to_s)
       expect(page).to have_content("$ #{entity.amount}")
     end
   end

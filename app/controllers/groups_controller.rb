@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-
+# top-level documentation comment
 class GroupsController < ApplicationController
   before_action :set_user
 

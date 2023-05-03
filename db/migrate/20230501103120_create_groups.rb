@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# top-level documentation comment
 class CreateGroups < ActiveRecord::Migration[7.0]
   def change
     create_table :groups do |t|

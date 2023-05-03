@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -77,4 +75,4 @@ end
 # Authentication
 gem 'devise'
 
-gem "esbuild-rails", "~> 0.1.4"
+gem 'esbuild-rails', '~> 0.1.4'

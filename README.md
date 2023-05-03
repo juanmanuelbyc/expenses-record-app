@@ -39,6 +39,8 @@
 
 > My Expenses Record App (Rails capstone) is a mobile application. You can add categories and transactions for that categories so you can remember what did you spend your money in.
 
+image.png
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>

@@ -1,6 +1,6 @@
 databases:
   - name: postgres
-    databaseName: postgres
+    databaseName: mydb
     user: postgres_user
 
 services:

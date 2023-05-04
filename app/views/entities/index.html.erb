@@ -1,0 +1,49 @@
+<section class="bkg1 full-scrn flex vert cntrd spc-btwn">
+  <nav class="navbar">
+    <div class="">
+      <%= link_to " ⇦ ", authenticated_root_path, :class => 'back-arrow' %>
+    </div>
+
+    <div>
+      <h3 class="text-white" style="margin-left: 25%">TRANSACTIONS</h3>
+    </div>
+
+    <div class="actions">
+      <% if user_signed_in? %>
+      <%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn btn3" %>
+      <% end %>
+    </div>
+  </nav>
+  
+  <div style="height: 100%;">
+    <div class="group-card">
+      <% if @group.image.attached? %>
+        <img src="<%=(url_for(@group.image)) %>", alt="group-image", style="width:60px; height:60px;">
+      <% end %>
+
+      <div class="flex vert cntrd">
+        <h4><%= @group.name%></h4>
+      </div>
+
+      <div>
+      </div>
+    </div>
+
+    <div class="flex vert cntrd">
+      <% @entities.order(created_at: :desc).each do |entity| %>
+        <hr>
+        <%= render "entity_row", entity: entity %>
+      <% end %>
+      <hr>
+    </div>
+
+    <div class="group-card">
+      <h6>Total Amount:</h6>
+      <h6> $ <%= @group.entities.sum(:amount) %></h6>
+    </div>
+  </div>
+
+  <div class="flex vert cntrd green">
+    <%= button_to 'ADD NEW TRANSACTION', new_group_entity_path(params[:group_id]), method: :get, class: "text-success btn4" %>
+  </div>
+</section>

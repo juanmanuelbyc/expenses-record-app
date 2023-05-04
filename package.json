@@ -1,0 +1,17 @@
+{
+  "name": "myapp",
+  "private": "true",
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --outdir=app/assets/builds"
+  },
+  "dependencies": {
+    "esbuild": "^0.17.18"
+  },
+  "devDependencies": {
+    "postcss-lit": "^1.1.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}

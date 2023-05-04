@@ -1,0 +1,14 @@
+<section class="flex cntrd spc-btwn vert full-scrn bkg1" style="padding:15% 0 2%">
+    <div class="flex cntrd">
+       <%= image_tag("app-image.jpg", width: '30%', alt: "Edit Entry") %>
+    </div>
+
+    <div>
+      <h1 style="font-size: 30px; font-family: 'Fertigo'">My Expenses Record App</h1>
+    </div>
+    
+    <div class="flex vert cntrd spc-arnd gap">
+      <%= button_to "SIGN IN", new_user_session_path, method: :get, class: 'btn btn1' %>
+      <%= button_to "SIGN UP", new_user_registration_path, method: :get, class: 'btn2' %>
+    </div>
+</section>

@@ -1,0 +1,32 @@
+<section class="bkg1 full-scrn flex vert" style="height: 100%;">
+  <%= form_with model: @group, url: groups_path do |form| %>
+  
+  <nav class="navbar">
+    <div class="">
+      <%= link_to " ⇦ ", authenticated_root_path, :class => 'back-arrow' %>
+    </div>
+
+    <div>
+      <h2 class="text-white">ADD NEW CATEGORY</h2>
+    </div>
+
+    <div class="">
+        <%= form.submit "Save", class: "btn btn3" %>
+      </div>
+  </nav>
+
+<div class="bkg2 flex vert">
+
+
+      <div>
+        <%= form.text_field :name, placeholder:'Name', :class =>'field1' %>
+      </div>
+      <div  class="field1">
+        <label>Upload Image <%= form.file_field :image, style: 'display:none;' %>
+        </label>
+      </div>
+      
+      </div>
+  <% end %>
+  
+</section>
